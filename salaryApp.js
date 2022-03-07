@@ -173,11 +173,8 @@ function toggleErrorMessage(selector, value, msg) {
 
 const showRecordCount = function (data) {
   const dlg = document.getElementById("dialog-record-count");
-
-  dlg.classList.remove("hide");
-
+  dlg.classList.remove("d-none");
   document.getElementById("numberOfRecords").innerText = data.length;
-
   dlg.dialog({
     buttons: {
       Ok: function () {
